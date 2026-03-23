@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS cropdb;
+USE cropdb;
+CREATE TABLE IF NOT EXISTS predictions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    N DECIMAL(8,3) NOT NULL,
+    P DECIMAL(8,3) NOT NULL,
+    K DECIMAL(8,3) NOT NULL,
+    temperature DECIMAL(6,3) NOT NULL,
+    humidity DECIMAL(6,3) NOT NULL,
+    ph DECIMAL(5,3) NOT NULL,
+    rainfall DECIMAL(8,3) NOT NULL,
+    predicted_crop VARCHAR(100) NOT NULL,
+    confidence_score DECIMAL(5,4) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

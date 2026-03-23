@@ -1,0 +1,75 @@
+/* === Global Styles === */
+body {
+  background: url("images/crop_reco.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Transparent Card Styling === */
+.card {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9); /* white with transparency */
+  border: 2px solid #dcedc8; /* light green border */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+/* === Card Title / Headers === */
+.card-title {
+  color: #1c6420; /* dark green */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* === Labels === */
+label.form-label {
+  color: #0277bd; /* sky blue */
+  font-weight: 500;
+}
+
+/* === Input Fields === */
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #c8e6c9; /* soft green border */
+  transition: 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #1b5e20; /* dark green */
+  box-shadow: 0 0 8px rgba(27, 94, 32, 0.4);
+}
+
+/* === Primary Button (Recommend Crop) === */
+.btn-primary, .btn-success {
+  background-color: #1b5e20 !important; /* dark green */
+  border-color: #1b5e20 !important;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover, .btn-success:hover {
+  background-color: #2e7d32 !important; /* lighter green */
+  border-color: #2e7d32 !important;
+}
+
+/* === Outline Button (Admin Panel) === */
+.btn-outline-secondary, .btn-outline-dark {
+  border-color: #6d4c41; /* soil brown */
+  color: #6d4c41;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.btn-outline-secondary:hover, .btn-outline-dark:hover {
+  background-color: #6d4c41;
+  color: #ffffff;
+}
+
+/* === Page Container === */
+.container {
+  max-width: 900px;
+}
